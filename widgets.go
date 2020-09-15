@@ -2,16 +2,16 @@ package widgets
 
 import uuid "github.com/satori/go.uuid"
 
-type Widget struct {
+type widget struct {
 	id string
 }
 
-func NewWidget() Widget {
-	return Widget{
+func NewWidget() widget {
+	return widget{
 		id: uuid.NewV4().String(),
 	}
 }
 
-func (w Widget) ID() string {
+func (w widget) ID() string {
 	return w.id
 }
