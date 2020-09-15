@@ -12,6 +12,7 @@ type widget struct {
 	id string
 }
 
+// NewWidget() 返回一个新的 Widget 实例
 func NewWidget() Widget {
 	return widget{
 		id: uuid.NewV4().String(),
